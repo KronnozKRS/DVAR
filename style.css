@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    --background-color: rgb(248, 246, 246);
+}
+
+html{
+    font-family: 'Outfit', sans-serif;
+    font-size: 62.5%;
+    
+}
+
+nav{
+    background-color: var(--background-color);
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-nav__logo {
+    display: flex;
+    align-items: center;
+}
+
+.main-nav__logo a {
+    color: black;
+}
+
+.main-nav__title h2 {
+    color: #005BF5;
+}
+
+.main-nav__title span {
+    font-size: 2rem;
+    color: #14F7D6;
+}
+
+.main-nav__title p {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.main-nav_icon i {
+    color: rgb(68, 70, 84);
+    border: 2px solid rgb(68, 70, 84);
+    font-size: 3rem;
+    margin: 20px;
+    padding: 3px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.desplegable {
+    background-color: rgb(0, 91, 245);
+    position: absolute;
+    display: none;
+    width: 100%;
+}
+
+.desplegable h2 {
+    margin-top: 25px;
+}
+
+.desplegable a {
+    color: white;
+    margin: 20px;
+    font-size: 2rem;
+}
+
+.desplegable-rrss i {
+    margin-right: 20px;
+    font-size: 3rem;
+    display: flex;
+    justify-content: right;
+}
+
+.desplegable a {
+    text-decoration: none;
+    color: white;
+}
+
+.desplegable.active{
+    display: block;
+}
